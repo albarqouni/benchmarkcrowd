@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_XszokGOvEeKautvu21v6Vg" elementId="org.eclipse.e4.ide.application" bindingContexts="_Xs0PoGOvEeKautvu21v6Vg">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_XszokWOvEeKautvu21v6Vg" label="CrowdBenchmark" x="50" y="50" width="1280" height="600">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_Xs0Pt2OvEeKautvu21v6Vg">
+      <children xsi:type="advanced:Perspective" xmi:id="_Xs02sGOvEeKautvu21v6Vg" label="Evaluation">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_Xs02sWOvEeKautvu21v6Vg" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_naleIGOxEeKosv2j3E6BBw" elementId="crowdbenchmark.partsashcontainer.left" containerData="30">
+            <children xsi:type="basic:PartStack" xmi:id="_1DbSYGOxEeKosv2j3E6BBw" elementId="crowdbenchmark.partstack.5" containerData="65">
+              <children xsi:type="basic:Part" xmi:id="_8KJdcGOxEeKosv2j3E6BBw" elementId="crowdbenchmark.part.configview" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.parts.SimulateConfigPart" label="Configuration"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_vVpAgGpREeKbgqkBtnOhMA" elementId="crowdbenchmark.partstack.0" toBeRendered="false" visible="false" containerData="35">
+              <children xsi:type="basic:Part" xmi:id="_wTH8cGpREeKbgqkBtnOhMA" elementId="crowdbenchmark.part.workerchart" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.parts.WorkerChartPart" label="Worker Chart"/>
+            </children>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_n3Z9AGOxEeKosv2j3E6BBw" elementId="crowdbenchmark.partsashcontainer.right" containerData="70" horizontal="true">
+            <children xsi:type="basic:PartStack" xmi:id="_zSv-8GOxEeKosv2j3E6BBw" elementId="crowdbenchmark.partstack.chart" containerData="70">
+              <children xsi:type="basic:Part" xmi:id="_tkMT4Gu4EeKFhNbzoHujRA" elementId="crowdbenchmark.part.chartview.accuracy" toBeRendered="false" visible="false" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.parts.ChartPart" label="Accuracy"/>
+              <children xsi:type="basic:Part" xmi:id="_wJEdwGYNEeKUi-q9VE7EwA" elementId="crowdbenchmark.part.chartview.time" toBeRendered="false" visible="false" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.parts.ChartPart" label="CompletionTime"/>
+            </children>
+            <children xsi:type="basic:PartSashContainer" xmi:id="_Nn0rgGrUEeKWxdP9qeHpGA" elementId="crowdbenchmark.partsashcontainer.0" containerData="30">
+              <children xsi:type="basic:PartStack" xmi:id="_wtDIAGOxEeKosv2j3E6BBw" elementId="crowdbenchmark.partstack.1" containerData="">
+                <children xsi:type="basic:Part" xmi:id="_PBuAYGOyEeKosv2j3E6BBw" elementId="crowdbenchmark.part.resultview" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.parts.ResultPart" label="Result"/>
+              </children>
+              <children xsi:type="basic:PartStack" xmi:id="_KoZF8GrUEeKWxdP9qeHpGA" elementId="crowdbenchmark.partstack.2">
+                <children xsi:type="basic:Part" xmi:id="_FiWi8GOyEeKosv2j3E6BBw" elementId="crowdbenchmark.part.answerview" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.parts.AnswerPart" label="Answer"/>
+              </children>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_Xs0PsGOvEeKautvu21v6Vg" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_Xs0PsWOvEeKautvu21v6Vg" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Xs0PsmOvEeKautvu21v6Vg" toBeRendered="false" visible="false" label="Open" iconURI="platform:/plugin/CrowdBenchmark/icons/sample.gif" command="_Xs0Pp2OvEeKautvu21v6Vg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Xs0Ps2OvEeKautvu21v6Vg" toBeRendered="false" visible="false" label="Save" iconURI="platform:/plugin/CrowdBenchmark/icons/save_edit.gif" command="_Xs0PqmOvEeKautvu21v6Vg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Xs0PtGOvEeKautvu21v6Vg" label="Quit" command="_Xs0Po2OvEeKautvu21v6Vg"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_Xs0PtWOvEeKautvu21v6Vg" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_Xs0PtmOvEeKautvu21v6Vg" label="About" command="_Xs0PrWOvEeKautvu21v6Vg"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_Xs02tGOvEeKautvu21v6Vg">
+      <children xsi:type="menu:ToolBar" xmi:id="_Xs02tWOvEeKautvu21v6Vg" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Xs02tmOvEeKautvu21v6Vg" toBeRendered="false" visible="false" iconURI="platform:/plugin/CrowdBenchmark/icons/sample.gif" command="_Xs0Pp2OvEeKautvu21v6Vg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Xs02t2OvEeKautvu21v6Vg" toBeRendered="false" visible="false" iconURI="platform:/plugin/CrowdBenchmark/icons/save_edit.gif" command="_Xs0PqmOvEeKautvu21v6Vg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_TvJ8YGnzEeKbgqkBtnOhMA" elementId="crowdbenchmark.handledtoolitem.0" label="Evaluate" iconURI="platform:/plugin/CrowdBenchmark/icons/evaluate_16.png" tooltip="Run Evaluation" command="_l42ssGnzEeKbgqkBtnOhMA"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_Xs0PpGOvEeKautvu21v6Vg" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.handlers.QuitHandler" command="_Xs0Po2OvEeKautvu21v6Vg"/>
+  <handlers xmi:id="_Xs0PqGOvEeKautvu21v6Vg" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.handlers.OpenHandler" command="_Xs0Pp2OvEeKautvu21v6Vg"/>
+  <handlers xmi:id="_Xs0Pq2OvEeKautvu21v6Vg" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.handlers.SaveHandler" command="_Xs0PqmOvEeKautvu21v6Vg"/>
+  <handlers xmi:id="_Xs0PrmOvEeKautvu21v6Vg" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.handlers.AboutHandler" command="_Xs0PrWOvEeKautvu21v6Vg"/>
+  <handlers xmi:id="_wOFJMGn1EeKbgqkBtnOhMA" elementId="crowdbenchmark.handler.evaluate" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.handlers.EvaluateHandler" command="_l42ssGnzEeKbgqkBtnOhMA"/>
+  <bindingTables xmi:id="_Xs0PpWOvEeKautvu21v6Vg" bindingContext="_Xs0PoGOvEeKautvu21v6Vg">
+    <bindings xmi:id="_Xs0PpmOvEeKautvu21v6Vg" keySequence="M1+Q" command="_Xs0Po2OvEeKautvu21v6Vg"/>
+    <bindings xmi:id="_Xs0PqWOvEeKautvu21v6Vg" keySequence="M1+O" command="_Xs0Pp2OvEeKautvu21v6Vg"/>
+    <bindings xmi:id="_Xs0PrGOvEeKautvu21v6Vg" keySequence="M1+S" command="_Xs0PqmOvEeKautvu21v6Vg"/>
+    <bindings xmi:id="_Xs0Pr2OvEeKautvu21v6Vg" keySequence="M1+A" command="_Xs0PrWOvEeKautvu21v6Vg"/>
+    <bindings xmi:id="_7IG_EGn7EeKbgqkBtnOhMA" elementId="crowdbenchmark.keybinding.0" keySequence="F11" command="_l42ssGnzEeKbgqkBtnOhMA"/>
+  </bindingTables>
+  <rootContext xmi:id="_Xs0PoGOvEeKautvu21v6Vg" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_Xs0PoWOvEeKautvu21v6Vg" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_Xs0PomOvEeKautvu21v6Vg" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_Xs0Po2OvEeKautvu21v6Vg" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_Xs0Pp2OvEeKautvu21v6Vg" elementId="CrowdBenchmark.open" commandName="openCommand"/>
+  <commands xmi:id="_Xs0PqmOvEeKautvu21v6Vg" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_Xs0PrWOvEeKautvu21v6Vg" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_l42ssGnzEeKbgqkBtnOhMA" elementId="crowdbenchmark.command.evaluate" commandName="evaluateCommand"/>
+  <addons xmi:id="_XszokmOvEeKautvu21v6Vg" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_Xszok2OvEeKautvu21v6Vg" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_XszolGOvEeKautvu21v6Vg" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_XszolWOvEeKautvu21v6Vg" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_XszolmOvEeKautvu21v6Vg" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_Xszol2OvEeKautvu21v6Vg" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>
