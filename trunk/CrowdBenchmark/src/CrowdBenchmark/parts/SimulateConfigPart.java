@@ -31,9 +31,10 @@ import org.eclipse.jface.databinding.viewers.ViewersObservables;
 import org.eclipse.jface.layout.GridDataFactory;
 import org.eclipse.jface.layout.TableColumnLayout;
 import org.eclipse.jface.viewers.ArrayContentProvider;
+import org.eclipse.jface.viewers.CheckStateChangedEvent;
 import org.eclipse.jface.viewers.CheckboxTableViewer;
-import org.eclipse.jface.viewers.ColumnWeightData;
 import org.eclipse.jface.viewers.ComboViewer;
+import org.eclipse.jface.viewers.ICheckStateListener;
 import org.eclipse.jface.viewers.LabelProvider;
 import org.eclipse.jface.window.Window;
 import org.eclipse.swt.SWT;
@@ -62,8 +63,6 @@ import org.eclipse.ui.forms.widgets.Form;
 import org.eclipse.ui.forms.widgets.FormToolkit;
 import org.eclipse.ui.forms.widgets.Section;
 
-import tools.io.ConfigReader;
-import tools.io.Crowd_TxtWriter;
 import CrowdBenchmark.events.EventConstants;
 import CrowdBenchmark.models.Algorithm;
 import CrowdBenchmark.models.AlgorithmModel;
@@ -73,6 +72,9 @@ import CrowdBenchmark.models.BenchmarkModel;
 import CrowdBenchmark.models.Metric;
 import CrowdBenchmark.models.MetricModel;
 import CrowdBenchmark.models.SimulationParameter;
+import CrowdBenchmark.tools.io.ConfigReader;
+import CrowdBenchmark.tools.io.Crowd_TxtWriter;
+import CrowdBenchmark.tools.io.TxtWriter;
 import CrowdBenchmark.util.Constant;
 import CrowdBenchmark.util.ContextUtil;
 import CrowdBenchmark.validators.NumericValidator;
@@ -179,6 +181,9 @@ public class SimulateConfigPart extends AbstractPart {
 
 		bindAlgoParamValues();
 		bindMetricParamValues();
+
+		algorithmTableViewer.setAllChecked(true);
+		metricTableViewer.setAllChecked(true);
 
 		// addValidator();
 		// updateWorkerChart();
@@ -377,13 +382,16 @@ public class SimulateConfigPart extends AbstractPart {
 		sctnMetric.setClient(metricComposite);
 
 		metricTableViewer = addCheckedTableViewer(toolkit, metricComposite);
+		Metric selectAll = new Metric();
+		selectAll.setName(Constant.SELECTALL);
+		metricTableViewer.add(selectAll);
 		for (Metric metric : selectedMetric.getMetrics()) {
 			metricTableViewer.add(metric);
 		}
-		Table table = metricTableViewer.getTable();
-		addSelectAllListener(table);
-		table.setSize(100, 100);
-		table.pack();
+		// Table table = metricTableViewer.getTable();
+		// addSelectAllListener(table);
+		// table.setSize(100, 100);
+		// table.pack();
 	}
 
 	private CheckboxTableViewer addCheckedTableViewer(FormToolkit toolkit,
@@ -391,19 +399,35 @@ public class SimulateConfigPart extends AbstractPart {
 		TableColumnLayout tableColumnLayout = new TableColumnLayout();
 		composite.setLayout(tableColumnLayout);
 
-		CheckboxTableViewer checkboxTableViewer = CheckboxTableViewer
+		final CheckboxTableViewer checkboxTableViewer = CheckboxTableViewer
 				.newCheckList(composite, SWT.BORDER | SWT.FULL_SELECTION
 						| SWT.V_SCROLL | SWT.H_SCROLL | SWT.SINGLE);
 		Table table = checkboxTableViewer.getTable();
-		table.setHeaderVisible(true);
+		// table.setHeaderVisible(true);
 		toolkit.paintBordersFor(table);
-		TableColumn tableColumn = new TableColumn(table, SWT.NONE);
-		tableColumn.setText("Select All");
-		tableColumn.setImage(new Image(Display.getCurrent(),
-				"icons/checkbox.gif"));
-		tableColumnLayout.setColumnData(tableColumn, new ColumnWeightData(1));
-		tableColumn.setWidth(150);
+		// TableColumn tableColumn = new TableColumn(table, SWT.NONE);
+		// tableColumn.setText("Select All");
+		// tableColumn.setImage(new Image(Display.getCurrent(),
+		// "icons/checkbox.gif"));
+		//
+		// tableColumnLayout.setColumnData(tableColumn, new ColumnWeightData(20,
+		// 150, true));
+		// tableColumn.setWidth(150);
 		GridDataFactory.fillDefaults().grab(true, true).applyTo(table);
+		// addSelectAllListener(table, tableItem);
+		checkboxTableViewer.addCheckStateListener(new ICheckStateListener() {
+			@Override
+			public void checkStateChanged(CheckStateChangedEvent event) {
+				boolean checked = event.getChecked();
+				Object ele = event.getElement();
+				if (Constant.SELECTALL.equalsIgnoreCase(ele.toString())) {
+					if (checked) {
+						checkboxTableViewer.setAllChecked(true);
+					} else
+						checkboxTableViewer.setAllChecked(false);
+				}
+			}
+		});
 		return checkboxTableViewer;
 
 		// friendsViewer = CheckboxTableViewer.newCheckList(friendsComposite,
@@ -441,14 +465,53 @@ public class SimulateConfigPart extends AbstractPart {
 		algorithmTableViewer = addCheckedTableViewer(toolkit,
 				algorithmComposite);
 
+		Algorithm selectAll = new Algorithm();
+		selectAll.setName(Constant.SELECTALL);
+		algorithmTableViewer.add(selectAll);
 		for (Algorithm algo : selectedAlgorithm.getAlgorithms()) {
 			algorithmTableViewer.add(algo);
 		}
-		Table table = algorithmTableViewer.getTable();
-		addSelectAllListener(table);
-		table.setSize(100, 100);
-		table.pack();
-		table.deselectAll();
+		// Table table = algorithmTableViewer.getTable();
+		// addSelectAllListener(table);
+		// table.setSize(100, 100);
+		// table.pack();
+		// table.deselectAll();
+	}
+
+	private void addSelectAllListener(final Table table, TableItem tableItem) {
+		tableItem.addListener(SWT.CHECK, new Listener() {
+			@Override
+			public void handleEvent(Event event) {
+				System.out.println("abc");
+				boolean checkBoxFlag = false;
+				for (int i = 0; i < table.getItemCount(); i++) {
+					if (table.getItems()[i].getChecked()) {
+						checkBoxFlag = true;
+					}
+				}
+
+				if (checkBoxFlag) {
+					for (int m = 0; m < table.getItemCount(); m++) {
+						table.getItems()[m].setChecked(false);
+						// tableColumn0.setImage(new Image(Display.getCurrent(),
+						// "icons/unchecked.gif"));
+
+						table.deselectAll();
+
+					}
+				} else {
+					for (int m = 0; m < table.getItemCount(); m++) {
+						table.getItems()[m].setChecked(true);
+						// tableColumn0.setImage(new Image(Display.getCurrent(),
+						// "icons/checkbox.gif"));
+
+						table.selectAll();
+					}
+				}
+
+			}
+		});
+
 	}
 
 	private void addSelectAllListener(final Table table) {
@@ -847,6 +910,11 @@ public class SimulateConfigPart extends AbstractPart {
 		}
 		ctx = new DataBindingContext();
 
+		if (simuPara.getIndex() != null) {
+			int index = simuPara.getIndex();
+			combo.select(index);
+		}
+
 		for (Text key : txtBindding.keySet()) {
 			IObservableValue widgetValue = WidgetProperties.text(SWT.Modify)
 					.observe(key);
@@ -1082,6 +1150,7 @@ public class SimulateConfigPart extends AbstractPart {
 	}
 
 	protected void startEvaluating() {
+		TxtWriter.getInstance().createDirIfNotExist(Constant.CONFIG_FOLDER);
 		File outfile = new File(Constant.ALGO_CONFIG_FILE);
 		try {
 			BufferedWriter bw = new BufferedWriter(new FileWriter(outfile));

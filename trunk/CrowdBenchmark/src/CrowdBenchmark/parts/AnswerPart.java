@@ -24,10 +24,10 @@ import org.eclipse.swt.widgets.FileDialog;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 
-import tools.io.AnswersReader;
-import tools.io.Crowd_TxtWriter;
 import CrowdBenchmark.events.EventConstants;
 import CrowdBenchmark.models.Answer;
+import CrowdBenchmark.tools.io.AnswersReader;
+import CrowdBenchmark.tools.io.Crowd_TxtWriter;
 
 public class AnswerPart extends AbstractPart {
 	private TableViewer tableViewer;

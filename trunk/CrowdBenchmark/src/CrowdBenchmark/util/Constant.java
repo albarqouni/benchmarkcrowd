@@ -1,9 +1,10 @@
 package CrowdBenchmark.util;
 
 public class Constant {
+	public static final String CONFIG_FOLDER = "./data";
 	public static final String CONFIG_FILE = "./data/config.ini";
 	public static final String ADVANCE_CONFIG_FILE = "./config.ini";
-	public static final String SIMULATE_INIT_FILE = "./data/default_config.ini";
+	public static final String SIMULATE_INIT_FILE = "./data/default_config.txt";
 	public static final String ALGO_CONFIG_FILE = "./data/algo_config.ini";
 	public static final String ANSWER_FILE = "data/answer";
 	public static final String RESULT_FILE = "data/result.csv";
@@ -20,6 +21,8 @@ public class Constant {
 	public static final String NEWPART = "newPart";
 	public static final String OBSERVER = "observer";
 
+	public static final String SELECTALL = "Select All";
+
 	public static enum ALGORITHM {
 		HoneyPot, MajorityDecision, EM, ELICE, SLME, IterativeLearning, GLAD
 
@@ -29,7 +32,7 @@ public class Constant {
 		NormalDistribution, UniformDistribution, FixedDistribution
 
 	};
-	
+
 	public static enum FEEDBACKSDISTRIBUTION {
 		FeedBacksPerQuestionDistributor, FeedBacksPerWorkerDistributor, FeedBacksConstraintDistributor
 

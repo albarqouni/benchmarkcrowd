@@ -2,8 +2,9 @@ package CrowdBenchmark.models;
 
 import java.util.HashMap;
 
-import tools.io.ConfigReader;
-import tools.io.ConfigWriter;
+import CrowdBenchmark.tools.io.ConfigReader;
+import CrowdBenchmark.tools.io.ConfigWriter;
+
 
 public class AdvanceConfigModel extends AbstractModel {
 	private AlgorithmAdvanceConfigModel algos;
