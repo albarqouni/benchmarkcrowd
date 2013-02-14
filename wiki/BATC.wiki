@@ -23,7 +23,7 @@ Understanding the performance implications of these techniques, for a given type
 
 = Screenshot =
 
-
+[http://benchmarkcrowd.googlecode.com/files/GUI10.png]
 
 = User Guide = 
 
