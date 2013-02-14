@@ -21,7 +21,7 @@ Understanding the performance implications of these techniques, for a given type
 
 = Screenshot =
 
-= User guide = 
+= User Guide = 
 
 System requirements: JDK 1.6. or above
 
