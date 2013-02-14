@@ -20,6 +20,7 @@ Understanding the performance implications of these techniques, for a given type
   # Example data sets: //?
   # Demo video: [https://benchmarkcrowd.googlecode.com/files/CrowdBenchmark.mp4 download]
 
+= Screenshot =
 
 = User guide = 
 
@@ -38,5 +39,3 @@ This project is an Eclipse RCP applications based on Eclipse 4, therefore you wi
   * Step 2: Follow section 3 and section 4 in this tutorial: http://www.vogella.com/articles/EclipseRCP/article.html#tutorial_installation
   * Step 3: Import CrowdBenchmark project to Eclipse RCP
   * Step 4: Launch project (see section 5 in Vogellat tutorial) 
-
-= Screenshot =
