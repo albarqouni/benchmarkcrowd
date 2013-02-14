@@ -1,0 +1,22 @@
+[Workers] 
+uniformSpammer = 10
+randomSpammer = 10
+expert = 10
+normalWorker = 10
+sloppyWorker = 10
+answerPerQuestion = 5
+[Questions] 
+question = 40
+category = 2
+trapQuestion = 5
+minCommonQuestion = 5
+answerPerWorker = 5
+[Observer]
+observer = 5
+minObserverValue = 5
+maxObserverValue = 10
+step = 1
+[Algorithm]
+algorithms = GLAD,SLME,HoneyPot
+[Metrics]
+metrics = Accuracy,ComputationTime

@@ -3,7 +3,7 @@ package CrowdBenchmark.models;
 import java.beans.PropertyChangeSupport;
 import java.util.Map;
 
-import tools.io.ConfigReader;
+import CrowdBenchmark.tools.io.ConfigReader;
 import CrowdBenchmark.util.Constant;
 
 public class SimulationParameter extends AbstractModel {
@@ -19,6 +19,7 @@ public class SimulationParameter extends AbstractModel {
 	private Integer answerPerQuestion;
 	private Integer answerPerWorker;
 	private Integer minCommonQuestion;
+	private Integer index;
 	private Integer minObserverValue;
 	private Integer maxObserverValue;
 	private Integer stepObserverValue;
@@ -26,7 +27,7 @@ public class SimulationParameter extends AbstractModel {
 
 	public SimulationParameter() {
 		// init();
-		//initMap();
+		// initMap();
 	}
 
 	private void init() {
@@ -61,8 +62,11 @@ public class SimulationParameter extends AbstractModel {
 				.parseInt(list.get("answerPerQuestion"));
 		this.answerPerWorker = Integer.parseInt(list.get("answerPerWorker"));
 		this.minCommonQuestion = Integer
-				.parseInt(list.get("minCommonQuestion"));
-		this.stepObserverValue = new Integer(1);
+				.parseInt(list.get("minCommonQuestion"));	
+		this.index = Integer.parseInt(list.get("observer"));
+		this.minObserverValue = Integer.parseInt(list.get("minObserverValue"));
+		this.maxObserverValue = Integer.parseInt(list.get("maxObserverValue"));
+		this.stepObserverValue = Integer.parseInt(list.get("step"));
 
 	}
 
@@ -201,6 +205,14 @@ public class SimulationParameter extends AbstractModel {
 		propertyChangeSupport.firePropertyChange("stepObserverValue",
 				this.stepObserverValue,
 				this.stepObserverValue = stepObserverValue);
+	}
+
+	public Integer getIndex() {
+		return index;
+	}
+
+	public void setIndex(Integer index) {
+		this.index = index;
 	}
 
 }
