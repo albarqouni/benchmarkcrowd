@@ -1,5 +1,0 @@
-Dataset,Algorithm,Enviroment,FeedbackModel,Number of Workers,Number of Question,Worker accuray,Correspondences Accuracy,Completion time,Seed,feedbacksPerWorker,ratio,Answer Per Question,index,Observer
-"",evaluateWorkers.HoneyPot,0.49984219255117074,TwoCoin,50,40,0.22979607458245227,0.0,0.0,123456789,12.28,0.24559999999999998,15.35,0.0,10
-"",evaluateWorkers.GLAD,0.49984219255117074,TwoCoin,50,40,0.4357222775504509,0.15,109.0,123456789,12.28,0.24559999999999998,15.35,0.0,10
-"",evaluateWorkers.IterativeLearning,0.49984219255117074,TwoCoin,50,40,0.449309642799581,0.1,17.0,123456789,12.28,0.24559999999999998,15.35,0.0,10
-"",evaluateWorkers.EM,0.49984219255117074,TwoCoin,50,40,0.046578195454356444,0.9,61.0,123456789,12.28,0.24559999999999998,15.35,0.0,10
