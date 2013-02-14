@@ -10,9 +10,9 @@ To fully tackle this challenge, a rich body of research on answer aggregation ha
 
 Understanding the performance implications of these techniques, for a given type of application, is difficult to comprehend. Therefore, we present the Benchmark for Aggregate Techniques in Crowdsourcing (BATC) with three functionalities:
 
-* Choose the best-suited technique for a particular application.
-* Provide the guidance on the selection of appropriate parameters.
-* Reduce the development complexity.
+  * Choose the best-suited technique for a particular application.
+  * Provide the guidance on the selection of appropriate parameters.
+  * Reduce the development complexity.
 
 = Deployment & Launch Program =
 
