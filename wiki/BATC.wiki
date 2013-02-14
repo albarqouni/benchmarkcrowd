@@ -17,7 +17,6 @@ Understanding the performance implications of these techniques, for a given type
 = Download = 
   # Runnable: click here
   # Example config files: config 1, config 2, config 3
-  # Example data sets: //?
   # Demo video: [https://benchmarkcrowd.googlecode.com/files/CrowdBenchmark.mp4 download]
 
 = Screenshot =
