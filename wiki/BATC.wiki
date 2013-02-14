@@ -16,7 +16,7 @@ This project is an Eclipse RCP applications based on Eclipse 4, therefore you wi
 
 
 = Download = 
-    Demo video: download. 
+    Demo video: [https://benchmarkcrowd.googlecode.com/files/CrowdBenchmark.mp4 download]
 
 = User guide = 
 
