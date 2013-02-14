@@ -19,7 +19,7 @@ Understanding the performance implications of these techniques, for a given type
   # Example config files: [https://benchmarkcrowd.googlecode.com/files/small_config.txt small config], [https://benchmarkcrowd.googlecode.com/files/medium_config.txt medium config], [https://benchmarkcrowd.googlecode.com/files/large_config.txt large config]
   # Demo video: [https://benchmarkcrowd.googlecode.com/files/CrowdBenchmark.mp4 download]
 
-<wiki:video url="http://youtu.be/BbHLOPa4jwM"/>
+<wiki:video url="http://www.youtube.com/watch?v=BbHLOPa4jwM"/>
 
 = Screenshot =
 
