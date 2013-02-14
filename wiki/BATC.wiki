@@ -1,9 +1,12 @@
-#summary One-sentence summary of this page.
+#summary A Benchmark for Aggregate Techniques in Crowdsourcing.
 #labels Phase-Deploy,Phase-Requirements,Featured,Phase-Support
 
 = Introduction =
 
-Add your content here.
+Today, crowdsourcing becomes a promising methdology to overcome various problems that require human knowledge such as image labelling, text annotation, and product recommendation. A wide range of applications (e.g. ESP game, reCaptcha, and Freebase) have been developed on top of more than 70 crowdsourcing platforms such as Amazon Mechanical Turk and CloudCrowd. The rapid growth of such crowdsourcing applications opens up a variety of interesting technical and social challenges.
+
+One of the most critical issues of crowdsourcing is to aggregate different answers given by the crowd workers. This is a challenging task because of two reasons: (i) the workers might have wide ranging levels of expertise and (ii) the questions may vary in different levels of difficulty. While the former leads to the high contradiction and uncertainty in the answer set, the latter renders some difficulties in distinguishing between truthful workers and malicious workers.
+To fully tackle this challenge, a rich body of research on answer aggregation has developed different techniques.
 
 = Deployment & Launch Program =
 
