@@ -33,7 +33,7 @@ System requirements: JDK 1.6. or above
 
 = Developer Guide =
 
-This project is an Eclipse RCP applications based on Eclipse 4, therefore you will need Eclipse IDE and install Eclipse4 to deploy and launch the program. The detail steps are follwing:
+This project is an Eclipse RCP applications based on Eclipse 4, therefore you will need Eclipse IDE and install Eclipse4 to deploy and launch the program. The detail steps are following:
 
   * Step 1: Check out CrowdBenchmark project from svn
   * Step 2: Follow section 3 and section 4 in this tutorial: http://www.vogella.com/articles/EclipseRCP/article.html#tutorial_installation
