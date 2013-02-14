@@ -14,29 +14,29 @@ Understanding the performance implications of these techniques, for a given type
   * Provide the guidance on the selection of appropriate parameters.
   * Reduce the development complexity.
 
-= Deployment & Launch Program =
-
-This project is an Eclipse RCP applications based on Eclipse 4, therefore you will need Eclipse IDE and install Eclipse4 for deploying and lauching program. The detail steps are follwing:
-
-  * Step 1: Check out CrowdBenchmark project from svn
-  * Step 2: Follow section 3 and section 4 in this tutorial: http://www.vogella.com/articles/EclipseRCP/article.html#tutorial_installation
-  * Step 3: Import CrowdBenchmark project to Eclipse RCP
-  * Step 4: Launch project (see section 5 in Vogellat tutorial)  
-
-
 = Download = 
-  # Runnable Jar: click here
+  # Runnable: click here
   # Example config files: config 1, config 2, config 3
   # Example data sets: //?
   # Demo video: [https://benchmarkcrowd.googlecode.com/files/CrowdBenchmark.mp4 download]
+
 
 = User guide = 
 
 System requirements: JDK 1.6. or above
 
-  * Step 0: Deploy and launch program.
+  * Step 0: Download runnable file.
   * Step 1: Load a config or input parameter for Crowd, Question, Factor, Metric and Algorithm sections. 
   * Step 2: Run and evaluate the result of different algorithms.
   * Step 3: Change the config and re-run program. Arrange the views for comparison if necessary.
+
+= Developer Guide =
+
+This project is an Eclipse RCP applications based on Eclipse 4, therefore you will need Eclipse IDE and install Eclipse4 to deploy and launch the program. The detail steps are follwing:
+
+  * Step 1: Check out CrowdBenchmark project from svn
+  * Step 2: Follow section 3 and section 4 in this tutorial: http://www.vogella.com/articles/EclipseRCP/article.html#tutorial_installation
+  * Step 3: Import CrowdBenchmark project to Eclipse RCP
+  * Step 4: Launch project (see section 5 in Vogellat tutorial) 
 
 = Screenshot =
