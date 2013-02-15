@@ -1,0 +1,11 @@
+#summary Experimental Evaluation.
+#labels experiment,empirical,evaluation,result
+
+We proceed to report on the results of applying the benchmark to the six aggregate techniques. The main goal of the experiments is not only to compare the aggregation performances, but also to analyze the effects of worker characteristics on the performance behavior. In order to compare them in a fair manner, we provide the key insights under a wide range of settings to verify their performance. All the experiments ran on an Intel Core i7 processor 2.8 GHz system with 4 GB of main memory.
+
+
+= Computation Time =
+
+= Accuracy =
+
+= Sensitivity to Spammers =
