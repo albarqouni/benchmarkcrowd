@@ -1,5 +1,4 @@
 #summary A Benchmark for Aggregate Techniques in Crowdsourcing.
-#labels Phase-Deploy,Phase-Requirements,Featured,Phase-Support
 
 = Introduction =
 
