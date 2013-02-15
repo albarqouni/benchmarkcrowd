@@ -1,5 +1,4 @@
 #summary Benchmarking Guidelines - Summary and Conclusions.
-#labels practical,conclusion,findings,guideline
 
 This work presented a thorough evaluation and comparison of answer aggregate techniques widely used in crowdsourcing. We offered an overview of two major classes (non-iterative and iterative) of aggregate techniques, while discussing about the characteristics of the underlying probabilistic models. We then introduced the flexible and extensible benchmark framework, in which a new aggregate technique as well as a new measurement can be easily plugged. During the framework development, we made the best effort to re-implement and integrate the most representative aggregate techniques, and evaluated them in a fair manner. We also analyzed various performance factors for each technique, including _computation time, accuracy, sensitivity to spammer, adaptivity to multi labelling,_ and _worker estimation error_. The crowdsourcing process is simulated by letting six different types of workers answer binary or multiple-choice questions.
 
