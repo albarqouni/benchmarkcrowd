@@ -23,8 +23,20 @@ MD, HP, and ELICE are clear winners on this concern. The computation time (sec.)
 
 = Accuracy =
 
+The higher accuracy, the higher power of aggregation method. In the experiments, we measure accuracy of each method while varying the number of answers per question and the number of questions per worker. In that, we find which algorithm requires least answers and which algorithm requires least workers to achieve the accuracy requirements.
+
+[https://benchmarkcrowd.googlecode.com/files/accuracy_apo.png]
+
+Overall, the iterative techniques perform significantly better when the number of answers per question is higher. This is because the same questions are answered by multiple workers (overlapping between worker). As a result, the answers of each worker can be justified by the answers of others through iterations.
+
 = Sensitivity to Spammers =
+
+[https://benchmarkcrowd.googlecode.com/files/spammer_uniform.png]
 
 = Adaptivity to Multi-labeling =
 
+[https://benchmarkcrowd.googlecode.com/files/multi_accuracy.png]
+
 = Worker Estimation Error =
+
+[https://benchmarkcrowd.googlecode.com/files/mae_apo.png]
