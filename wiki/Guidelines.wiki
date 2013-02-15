@@ -11,7 +11,7 @@ We here summarize our principal findings as a set of recommendations for how to 
 * For applciations that require fast computation, MD and HP are the winners. Oppositely, we strongly suggest not using iterative techniques. Not only is their computation much higher than the non-iteraitve techniques, but also they require to re-compute the whole answer set upon the new arrival of worker answers.
 
 
-|| *category* || winner || 2nd best || worst ||
+|| *category* || *winner* || *2nd best* || *worst* ||
 || computation time || *MD* || ELICE || EM ||
 || accuracy || *EM* || SLME || ITER ||
 || robustness to spammers  || *SLME* || EM || ITER ||
