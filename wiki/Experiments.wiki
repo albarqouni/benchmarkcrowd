@@ -6,6 +6,25 @@ We proceed to report on the results of applying the benchmark to the six aggrega
 
 = Computation Time =
 
+It takes server resources to process worker answers. In some real-time applications, final aggregations need to be returned within minutes or even seconds. As a result, quickly aggregating the worker answers is a key factor.
+
+|| #questions x #workers || MD || HP || ELICE || EM || SLME || GLAD || ITER  ||
+|| 10 x 10 || 0 || 0 || 0 || 11 || 1 || 12 || 1 ||
+|| 10 x 50 || 0 || 0 || 1 || 51 || 3 || 59 || 15 ||
+|| 10 x 100 || 0 || 0 || 1 || 153 || 5 || 108 || 45 ||
+|| 50 x 10 || 0 || 0 || 1 || 33 || 3 || 45 || 19 ||
+|| 50 x 50 || 0 || 0 || 3 || 234 || 12 || 141 || 102 ||
+|| 50 x 100 || 0 || 0 || 6 || 928 || 27 || 238 || 355 ||
+|| 100 x 10 || 0 || 0 || 3 || 52 || 7 || 91 || 53 ||
+|| 100 x 50 || 0 || 0 || 9 || 529 || 24 || 272 || 336 ||
+|| 100 x 100 || 0 || 0 || 15 || 1591 || 46 || 473 || 915 ||
+
+MD, HP, and ELICE are clear winners on this concern. The computation time (sec.) is shown above. MD, HP, and ELICE by far outperform the others (it takes less than 1 sec. with the size $1000 \times 1000$ of $M$). This result is straightforward to understand: these techniques require no iteration. In brief, we recommend using MD, HP, or ELICE for real-time computations.
+
 = Accuracy =
 
 = Sensitivity to Spammers =
+
+= Adaptivity to Multi-labeling =
+
+= Worker Estimation Error =
