@@ -7,7 +7,7 @@ Database schema matching is the process of establishing correspondences between 
 
 = Data Sets =
 
-# [http://lsirwww.epfl.ch/schema_matching/download/bp_schemata.zip Business Partner]: The BusinessPartner dataset is a catalogue of Web services available in SAP Enterprize Resource Planing (ERP) system, [http://esworkplace.sap.com/ SAP ESW] and the service inputs/outputs parameters are defined using Global Data Types (GDTs) of SAP. This dataset consists of 3 schemas, where each schema has around 80 attributes and 3 levels of hierarchy.
+# [http://lsirwww.epfl.ch/schema_matching/download/bp_schemata.zip Business Partner]: The Business Partner dataset is a catalogue of Web services available in SAP Enterprize Resource Planing (ERP) system, [http://esworkplace.sap.com/ SAP ESW] and the service inputs/outputs parameters are defined using Global Data Types (GDTs) of SAP. This dataset consists of 3 schemas, where each schema has around 80 attributes and 3 levels of hierarchy.
 
 # [http://lsirwww.epfl.ch/schema_matching/download/po_schemata.zip Purchase Order]: We collected, extracted and normalized purchase order e-business documents from various resources, including [http://dbs.uni-leipzig.de/Research/coma.html COMA] evaluations, [http://www.opentrans.de openTRANS], [http://www.xcbl.org/ xCBL], [http://www.rosettanet.org/ RosettaNet], etc.
 
