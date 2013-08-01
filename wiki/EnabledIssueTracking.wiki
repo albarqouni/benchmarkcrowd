@@ -1,0 +1,35 @@
+#summary How to report issue / defect.
+
+= Who =
+
+Anyone interested in our benchmark. We extremely appreciate all comments and questions.
+
+
+= How =
+
+If you have a Gmail account. Go to the [https://code.google.com/p/benchmarkcrowd/issues/list Issues] menu and open a new issue.
+
+Otherwise, please report the issue to [lamtran3101@gmail.com lamtran3101@gmail.com] with the following template:
+
+*Title:*
+Enter one-line summary
+
+*Description:*
+What steps will reproduce the problem?
+1.
+2.
+3.
+
+What is the expected output? What do you see instead? (A screenshot is
+especially helpful for us)
+
+
+What version of the product are you using? On what operating system?
+
+
+Please provide any additional information below.
+
+
+= Why = 
+
+If you need further information, please contact [thanhtamlhp@gmail.com thanhtamlhp@gmail.com]
