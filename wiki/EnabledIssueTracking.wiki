@@ -7,7 +7,7 @@ Anyone interested in our benchmark. We extremely appreciate all comments and que
 
 = How =
 
-If you have a Gmail account. Go to the [https://code.google.com/p/benchmarkcrowd/issues/list] Issues menu and open a new issue.
+If you have a Gmail account. Go to the [https://code.google.com/p/benchmarkcrowd/issues/list Issues] Issues menu and open a new issue.
 
 Otherwise, please report the issue to [lamtran3101@gmail.com lamtran3101@gmail.com] with the following template:
 
