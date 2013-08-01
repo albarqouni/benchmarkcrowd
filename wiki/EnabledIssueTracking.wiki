@@ -1,5 +1,7 @@
 #summary How to report issue / defect.
 
+No one is perfect. To improve our project, we hope to receive all invaluable suggestions from you. Please give us the details of your problem so that we can fix it best. In the meantime, please bare with us and as soon as your issues are fixed, we shall notify you.
+
 = Who =
 
 Anyone interested in our benchmark. We extremely appreciate all comments and questions.
@@ -9,7 +11,7 @@ Anyone interested in our benchmark. We extremely appreciate all comments and que
 
 If you have a Gmail account. Go to the [https://code.google.com/p/benchmarkcrowd/issues/list Issues] menu and open a new issue.
 
-Otherwise, please report the issue to [http://lamtran3101@gmail.com lamtran3101@gmail.com] with the following template:
+Otherwise, please report the issue to [http://lamtran3101@gmail.com lamtran3101@gmail.com] with the following template and we will open the issue for you (without revealing your identity):
 
 *Title:*
 
@@ -37,4 +39,4 @@ Please provide any additional information below.
 
 = Why = 
 
-If you need further information, please contact [http://thanhtamlhp@gmail.com thanhtamlhp@gmail.com]
+If you have other kinds of questions, please contact [http://thanhtamlhp@gmail.com thanhtamlhp@gmail.com]
