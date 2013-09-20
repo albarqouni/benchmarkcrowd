@@ -19,7 +19,7 @@
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_Nn0rgGrUEeKWxdP9qeHpGA" elementId="crowdbenchmark.partsashcontainer.0" containerData="30">
               <children xsi:type="basic:PartStack" xmi:id="_wtDIAGOxEeKosv2j3E6BBw" elementId="crowdbenchmark.partstack.1" containerData="">
-                <children xsi:type="basic:Part" xmi:id="_PBuAYGOyEeKosv2j3E6BBw" elementId="crowdbenchmark.part.resultview" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.parts.ResultPart" label="Result"/>
+                <children xsi:type="basic:Part" xmi:id="_PBuAYGOyEeKosv2DDj3E6BBw" elementId="crowdbenchmark.part.resultview" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.parts.ResultPart" label="Result"/>
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_KoZF8GrUEeKWxdP9qeHpGA" elementId="crowdbenchmark.partstack.2">
                 <children xsi:type="basic:Part" xmi:id="_FiWi8GOyEeKosv2j3E6BBw" elementId="crowdbenchmark.part.answerview" contributionURI="bundleclass://CrowdBenchmark/CrowdBenchmark.parts.AnswerPart" label="Answer"/>
@@ -74,4 +74,5 @@
   <addons xmi:id="_XszolWOvEeKautvu21v6Vg" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
   <addons xmi:id="_XszolmOvEeKautvu21v6Vg" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
   <addons xmi:id="_Xszol2OvEeKautvu21v6Vg" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_rnaFUC12EeKJg_Pk9LqbBQ" elementId="org.eclipse.e4.tools.emf.editor.addon.0" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
 </application:Application>

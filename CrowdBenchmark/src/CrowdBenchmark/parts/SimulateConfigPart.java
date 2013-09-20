@@ -1032,6 +1032,9 @@ public class SimulateConfigPart extends AbstractPart {
 		 * + listConfig.get(key)); }
 		 */
 		Feedback_Simulating simulate = new Feedback_Simulating(listConfig);
+		for (String key : listConfig.keySet()) {
+			System.out.println("key: " + key + ", value: " + listConfig.get(key) );
+		}
 		simulate.SetFileConfig(Constant.CONFIG_FILE);
 		simulate.run();
 		FeedBackModel model = simulate.getModel();
@@ -1109,6 +1112,12 @@ public class SimulateConfigPart extends AbstractPart {
 
 		listConfig.put("NumOfQuestion", params.get("question") + "");
 		listConfig.put("InputNumberLabels", params.get("category") + "");
+		//if multilabel
+		listConfig.put("InputDataType", "Binary");
+		int numLabels = params.get("category");
+		if(numLabels > 2) listConfig.put("InputDataType", "Multiple");
+
+		
 		listConfig.put("InputRatioLabels", inputRatioLabels);
 		listConfig.put("HoneyPotRatio", params.get("trapQuestion") + "");
 		listConfig.put("ratioSubset", params.get("minCommonQuestion") + "");
